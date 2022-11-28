@@ -14,3 +14,7 @@ def home(response):
 
 def filter_jobs_form(response):
     return render(response, "jobsearch/filter_jobs_form.html", {})
+
+
+def search_results(response):
+    return render(response, "jobsearch/search_results.html", {})

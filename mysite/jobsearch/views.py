@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .forms import FilterJobs
 
 # Create your views here.
 
@@ -13,7 +14,8 @@ def home(response):
 
 
 def filter_jobs_form(response):
-    return render(response, "jobsearch/filter_jobs_form.html", {})
+    form = FilterJobs()
+    return render(response, "jobsearch/filter_jobs_form.html", {"form":form})
 
 
 def search_results(response):

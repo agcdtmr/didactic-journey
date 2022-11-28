@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Europe Jobs Search</title>
+    <title>{% block title %}Europe Jobs Search{% endblock %}</title>
 </head>
 <body>
-
-    <p>Base Template</p>
-    <p><h1>Let's find you a job in Europe!</h1></p>
-
+    <div id="content", name="content">
+        {% block content %}
+        <h1>Hello World</h1>
+        {% endblock %}
+    </div>
 </body>
 </html>

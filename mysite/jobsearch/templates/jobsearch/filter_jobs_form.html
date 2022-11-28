@@ -1,1 +1,36 @@
 {% extends 'jobsearch/base.html' %}
+
+{% block title %}Let's filter jobs{% endblock %}
+
+{% block content %}
+<h1>Filter Jobs</h1>
+<h2>Let's find you a job in Europe!</h2>
+{% endblock %}
+
+{% block body %}
+    <form method="GET" action="/search-results">
+        {{form}}
+
+<!--        {{ formInput(name="job_title", id="job_title", label="job_title" }}-->
+
+        <button type="submit">
+            Search
+        </button>
+    </form>
+
+
+{% endblock %}
+
+
+
+<!--"employer_name": entry['company']['name'],-->
+<!--            "job_title": entry['name'],-->
+<!--            "link": entry['refs']['landing_page'],-->
+<!--            "publication_date": entry['publication_date'],-->
+<!--            # To do: retrieve all locations-->
+<!--            "location": entry['locations'][0]['name'],-->
+<!--            # To do: retrieve all categories-->
+<!--            "category": entry['categories'][0]['name'],-->
+<!--            "job_ID": entry['id'],-->
+<!--            "company_id": entry['company']['id'],-->
+<!--            "job_description": entry['contents'],-->

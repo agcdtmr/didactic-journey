@@ -4,12 +4,13 @@ from django.http import HttpResponse
 # Create your views here.
 
 
-def view_home(response):
-    return HttpResponse("<h1>Let's find you a job in Europe!</h1>")
+def base(response):
+    return render(response, "jobsearch/base.html", {})
 
 
-def view_all_jobs(response):
-    return HttpResponse("Here you will find all the jobs in Europe")
+def home(response):
+    return render(response, "jobsearch/home.html", {})
 
 
-
+def filter_jobs_form(response):
+    return render(response, "jobsearch/filter_jobs_form.html", {})

@@ -5,21 +5,21 @@
 {% block content %}
 <h1>Filter Jobs</h1>
 <h2>Let's find you a job in Europe!</h2>
-{% endblock %}
+
 
 {% block body %}
-    <form method="GET" action="/search-results">
-        {{form}}
-
-<!--        {{ formInput(name="job_title", id="job_title", label="job_title" }}-->
-
-        <button type="submit">
+    <form method="GET" action="/search_results">
+        {{form.as_p}}
+        <button type="submit" name="search-button">
             Search
         </button>
     </form>
 
-
 {% endblock %}
+{% endblock %}
+
+<!--use this for post-->
+<!--        {% csrf_token %}-->
 
 
 

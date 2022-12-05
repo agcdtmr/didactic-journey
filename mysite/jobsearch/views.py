@@ -6,17 +6,17 @@ from .forms import FilterJobs
 
 
 def base(response):
-    return render(response, "jobsearch/base.html", {})
+    return render(response, "static/base.html", {})
 
 
 def home(response):
-    return render(response, "jobsearch/home.html", {})
+    return render(response, "static/home.html", {})
 
 
 def filter_jobs_form(response):
     form = FilterJobs()
-    return render(response, "jobsearch/filter_jobs_form.html", {"form":form})
+    return render(response, "static/filter_jobs_form.html", {"form": form})
 
 
 def search_results(response):
-    return render(response, "jobsearch/search_results.html", {})
+    return render(response, "static/search_results.html", {})

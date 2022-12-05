@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ("jobsearch", "0001_initial"),
+        ("static", "0001_initial"),
     ]
 
     operations = [
@@ -51,14 +51,14 @@ class Migration(migrations.Migration):
             model_name="savedjobs",
             name="Saved_user_ID",
             field=models.ForeignKey(
-                on_delete=django.db.models.deletion.CASCADE, to="jobsearch.users"
+                on_delete=django.db.models.deletion.CASCADE, to="static.users"
             ),
         ),
         migrations.AddField(
             model_name="savedjobs",
             name="jobsDB",
             field=models.ForeignKey(
-                on_delete=django.db.models.deletion.CASCADE, to="jobsearch.jobssearchdb"
+                on_delete=django.db.models.deletion.CASCADE, to="static.jobssearchdb"
             ),
         ),
     ]

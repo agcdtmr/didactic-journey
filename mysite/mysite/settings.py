@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "jobsearch.apps.JobsearchConfig",
+    "static.apps.JobsearchConfig",
     "macros",
 ]
 

@@ -4,7 +4,20 @@
 
 - Doing: Following along the Django [Documentation](https://docs.djangoproject.com/en/4.1/intro/tutorial04/)
 - Change the port. `python manage.py runserver 8080`
+
+## What I want to accomplish
+
 - Connect filter_jobs_form.html or searh_results with api
+
+## What exactly do I want to accomplish? Most important to least important.
+
+- Let users(women career switchers or tech newbies or juniors) browse all the jobs in tech in Europe in one page
+- Let users checkk one specific job in a new window or page
+- Let users filter the jobs per location, salary, job position, work condition(full/part time, remote/wfh/wfo/hybrid), Diversity & Inclusion, Company Size, Company Industry
+- Let users share a job advert in their social medias or network
+- Let users sign-up / login to save jobs
+- Let users delete saved jobs
+- Let users log out, but still when they log back in again, they would have their saved jobs available on their profile page
 
 ## How to run
 
@@ -29,8 +42,8 @@ Display the results: http://127.0.0.1:8000/search_results
 5. Install Django 4.1.3 - `python -m pip install Django` (to verify `python -m django --version`)
 6. Started Django project `django-admin startproject mysite`
 7. Creating an admin user `python manage.py createsuperuser` `http://127.0.0.1:8000/admin/`
-8. Create simple html templates
-9. Create search engine form
+8. Created simple html templates
+9. Created search engine form
 
 ## Files:
 

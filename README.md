@@ -12,10 +12,10 @@
 ## What exactly do I want to accomplish? Most important to least important.
 
 - Let users(women career switchers or tech newbies or juniors) browse all the jobs in tech in Europe in one page
-- Let users checkk one specific job in a new window or page
+- Let users check one specific job in a new window or page
 - Let users filter the jobs per location, salary, job position, work condition(full/part time, remote/wfh/wfo/hybrid), Diversity & Inclusion, Company Size, Company Industry
 - Let users share a job advert in their social medias or network
-- Let users sign-up / login to save jobs
+- Let users sign-up / login to save jobs they are interested in
 - Let users delete saved jobs
 - Let users log out, but still when they log back in again, they would have their saved jobs available on their profile page
 
